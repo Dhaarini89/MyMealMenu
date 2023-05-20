@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_margin="16dp"
+    android:orientation="horizontal"
+    tools:context=".ui.planner.PlannerFragment">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/Day"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true"
+                    android:text="Sun\n30"
+                    android:textColor="@color/purple_200"
+                    android:textAlignment="textEnd"
+                    />
+                <TextView
+                    android:id="@+id/Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="30"
+                    android:layout_below="@+id/Day"
+                    android:textColor="@color/purple_200"
+                    android:textAlignment="textEnd" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/weeklyCalendarOutline"
+                android:layout_width="0dp"
+                android:layout_weight="9"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/weeklyCalendarValues"
+                android:layout_width="wrap_content"
+                android:layout_weight="8"
+                android:background="@drawable/border"
+                android:layout_height="0dp">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/notification_layout"
+                    layout="@layout/menulist_with_addicon"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/notification_layout_lunch"
+                    layout="@layout/menulist_with_addicon"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/notification_layout_dinner"
+                    layout="@layout/menulist_with_addicon"/>
+
+            </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

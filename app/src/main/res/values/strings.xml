@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">MyMealMenu</string>
+    <string name="title_planner">Planner</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_list">List</string>
+    <string name="action_share">Share</string>
+    <string name="action_exit">Exit</string>
+    <string name="action_delete">Clear this week</string>
+    <string name="action_savetemplate">Save as Template</string>
+    <string name="action_addtemplate">Add from Template</string>
+    <string name="previous_week">&#60;  </string>
+    <string name="next_week">  &#62;</string>
+    <string name="action_deletelist">Delete the entire List</string>
+    <string name="action_deletetemplatelist">Delete all templates</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="week">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+    <string-array name="weekReminder">
+        <item>Never</item>
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
+</resources>

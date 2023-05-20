@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/outline"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    tools:context=".ui.settings.SettingsFragment">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout"
+        android:orientation="vertical"
+        android:layout_margin="4dp"
+        android:layout_gravity="start">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/Start"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd" android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="Start week on"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+
+                />
+            <Spinner
+                android:id="@+id/days"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:entries="@array/weekReminder"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textAlignment="textStart" android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="4dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/notify_plan"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd" android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="Remind me to update the planner on every"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+
+                />
+            <Spinner
+                android:id="@+id/notify_plan_days"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:entries="@array/week"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textAlignment="textStart" android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="4dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/notify_menu"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd" android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="Display current week menu at"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+
+                />
+            <Spinner
+                android:id="@+id/notify_menu_time"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:entries="@array/week"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textAlignment="textStart" android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

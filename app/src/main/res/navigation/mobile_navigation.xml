@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_planner">
+
+    <fragment
+        android:id="@+id/navigation_planner"
+        android:name="com.android.example.mymealmenu.ui.planner.PlannerFragment"
+        android:label="@string/title_planner"
+        tools:layout="@layout/fragment_planner" />
+
+    <fragment
+        android:id="@+id/navigation_tab"
+        android:name="com.android.example.mymealmenu.TabFragment"
+        android:label="@string/title_list"
+        tools:layout="@layout/fragment_tab" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.android.example.mymealmenu.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>
